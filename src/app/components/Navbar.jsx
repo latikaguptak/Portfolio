@@ -22,7 +22,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  // const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="fixed flex items-center justify-between mx-auto  top-0 left-0 right-0 z-10 bg-[#21476b] rounded-b-3xl bg-opacity-100 p-6 shadow-lg  transform hover:shadow-[#ffcd67] transition-transform duration-300 ease-in-out  cursor-pointer  text-white w-full">
