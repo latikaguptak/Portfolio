@@ -13,27 +13,27 @@ const projectsData = [
     image: "/images/Hotel-booking.png",
     "tag": ["All", "Web"],
     "gitUrl": "https://github.com/latikaguptak/Booking_Hotel.git",
-    "previewUrl": "https://booking-hotel-henna.vercel.app"},
+    "previewUrl": "https://hotel-booking-swart-eight.vercel.app/"},
   
   {
     id: 2,
     title: "Shopping Cart",
-    description: "Job website where user can apply for the job and they can accesses more feature a website after registration , frontend of website is based on React and backend is based on Express js and jwt is used for authentication mongoDB is used as database.",
+    description:"",
     image: "/images/Shopping-cart.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/latikaguptak/Shopping-Cart.git",
     previewUrl: "https://shopping-cart-tau-six-38.vercel.app/",
   },
  
-  // {
-  //   id: 3,
-  //   title: "Weather App React  PWA",
-  //   description: "Used axios , React and used PWA features of React ",
-  //   image: "/images/projects/weather.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "/",
-  //   previewUrl: "https://weatherappbyaman.web.app/",
-  // },
+  {
+    id: 3,
+    title: "Weather App React  PWA",
+    description: "Used axios , React and used PWA features of React ",
+    image: "/images/projects/weather.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "https://weatherappbyaman.web.app/",
+  },
   // {
   //   id: 4,
   //   title: "Motion an Ai powered note talking app",
