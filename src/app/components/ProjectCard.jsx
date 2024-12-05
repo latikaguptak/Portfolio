@@ -20,7 +20,7 @@ const ProjectCard = ({
   return (
     <div className={`${pathName == "/" ? "shadow-xl rounded-xl p-5 h-full" : ""}`}>
       <div
-        className={`h-52 w-full ${pathName.startsWith("/allprojects") ? "md:h-96" : "md:h-72"} rounded-xl relative group overflow-hidden border cursor-pointer border-[#ffcd67] transform hover:translate-y-1 hover:shadow-xl transition ease-in-out duration-300`}
+        className={`h-52 w-full ${pathName.startsWith("/allprojects") ? "md:h-96" : "md:h-72"} rounded-t-xl relative group overflow-hidden border cursor-pointer border-[#ffcd67] transform hover:translate-y-1 hover:shadow-xl transition ease-in-out duration-300`}
         style={{
           background: `url(${imgUrl})`,
           backgroundSize: "cover",
