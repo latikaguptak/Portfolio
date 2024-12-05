@@ -18,7 +18,7 @@ const projectsData = [
   {
     id: 2,
     title: "Shopping Cart",
-    description:"",
+    description:"Create the shopping cart application using redux toolkit and react library, also add the feature to increment decrement and remove items.",
     image: "/images/Shopping-cart.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/latikaguptak/Shopping-Cart.git",
@@ -71,9 +71,9 @@ const ProjectsSection = () => {
   const handleTagChange = (newTag) => {
     setTag(newTag);
   };
-// const handleProjects = ()=>{
-//   router.push('/allprojects');
-// }
+const handleProjects = ()=>{
+  router.push('/allprojects');
+}
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
   );
@@ -84,19 +84,24 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-[#ffcd67] mt-4 mb-8 md:mb-12">
+    <>
+   
+    <section id="projects" className="flex justify-center items-center mt-32 bg-zinc-950">
+      <div className="flex justify-center items-center m-10 p-10 bg-blue-900 rounded-3xl shadow-inner hover:bg-blue-950 shadow-[#ffcd67]" > 
+
+      <h2 className="text-center text-4xl font-bold h-30 w-1/4 text-[#ffcd67] flex items-center justify-center rounded-3xl mt-10 pr-6 mb-8 md:mb-12">
         Projects
       </h2>
     
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-3  md:gap-4 ">
         {filteredProjects.map((project, index) => (
           <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
+          key={index}
+          variants={cardVariants}
+          initial="initial"
+          animate={isInView ? "animate" : "initial"}
+          transition={{ duration: 0.3, delay: index * 0.4 }}
+          className="bg-blue-950 rounded-3xl hover:bg-blue-900"
           >
             <ProjectCard
               key={project.id}
@@ -105,12 +110,14 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
-            />
+              />
           </motion.li>
         ))}
       </ul>
-      {/* <button onClick={handleProjects} className="p-2 m-3 px-8 border-1 border-[#ffcd67] text-[#ffcd67] bg-[#21476b] rounded-full shadow-xl hover:shadow-[#ffcd67] cursor-pointer flex items-center">Details <MdOutlineReadMore className="h-6 w-6 ml-2" /></button> */}
+      </div>
     </section>
+      {/* <button onClick={handleProjects} className="p-2 m-3 px-8 border-1 border-[#ffcd67] text-[#ffcd67] bg-[#21476b] rounded-full shadow-xl hover:shadow-[#ffcd67] cursor-pointer flex items-center">Details <MdOutlineReadMore className="h-6 w-6 ml-2" /></button> */}
+    </>
   );
 };
 

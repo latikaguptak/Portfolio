@@ -4,7 +4,7 @@ import { FiHome } from "react-icons/fi";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className="footer border  bg-[#21476b] border-t-[#ffcd67] border-l-transparent border-r-transparent text-white">
+    <footer className="footer border   bg-gray-950 border-t-[#ffcd67] border-l-transparent border-r-transparent text-white">
       <div className="container p-4 flex items-center justify-between">
         <p className="text-[#ffcd67] tracking-wide flex items-center space-x-2">
         <Link href="#">

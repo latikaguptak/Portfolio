@@ -39,7 +39,7 @@ const HeroSection = () => {
               className="text-[#ffcd67]"
             />
           </h3>
-          <p className="text-slate-200 text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="text-slate-200 text-base sm:text-lg mb-6 lg:text-l">
             Transforming ideas into seamless digital experiences with FrontEnd magic
           </p>
           <div>
@@ -51,7 +51,7 @@ const HeroSection = () => {
              Contact Me
             </Link>
             <Link
-              href= "https://latika-resume.tiiny.site/" //"https://aman-resume.tiiny.site/"//
+              href= "https://latika-resume.tiiny.site/"
               target="_blank"
             
               className="px-1 inline-block py-1 w-full border-2 border-[#ffcd67] sm:w-fit rounded-full bg-gradient-to-br  hover:bg-[#21476b]  hover:text-indigo-500 mt-3"

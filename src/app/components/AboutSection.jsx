@@ -47,13 +47,17 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-slate-200" id="about">
-      <div className="md:grid md:grid-cols-1 gap-8 items-center px-6">
+    <section className="text-slate-200 bg-zinc-950 shadow-sm p-10 "  id="about">
+      <div className="md:grid md:grid-cols-1 gap-8 items-center">
         <div className="mt-4 md:mt-0 flex flex-col h-full lg:text-justify">
-          <h2 className="text-4xl font-bold text-[#ffcd67] mb-4">About Me</h2>
-          <p className="text-slate-200 lg:text-lg">
+          <div className="bg-blue-900 hover:bg-blue-950 shadow shadow-[#ffcd67] p-6 rounded-3xl">
+
+          <h2 className="text-4xl font-bold text-[#ffcd67] mb-4 items-center justify-center flex pt-6">About Me</h2>
+          <p className="text-slate-200 lg:text-lg p-6">
             I am a Front End Developer with a fervor for crafting interactive and responsive web applications. Possessing proficiency in JavaScript, React, Redux, Next.js, HTML, CSS, and Git, I bring a comprehensive skill set to the development landscape. My commitment to continual learning is evidenced by my quick adaptability and eagerness to broaden my knowledge base. Recognized as a dedicated team player, I am enthusiastic about collaborative efforts to conceive and deliver exceptional applications. My professional approach and passion for web development fuel my commitment to contributing meaningfully to collaborative projects.
           </p>
+        </div>
+
           <div className="flex flex-row mt-8 w-full lg:justify-center space-x-4">
             {TAB_DATA.map((tabData) => (
               <TabButton
@@ -65,14 +69,14 @@ const AboutSection = () => {
               </TabButton>
             ))}
           </div>
-          <div className="flex flex-col lg:flex-row items-center lg:justify-between mt-8">
+          <div className="flex flex-col lg:flex-row items-center lg:justify-between mt-8 p-10">
             <div className="hidden lg:block">
               <Image
                 src="https://cdn.dribbble.com/users/1364029/screenshots/16093268/media/68e82a7fb4904614a9066d6b540c14b2.gif"
                 alt="dev"
                 height={500}
                 width={500}
-                className="object-cover rounded-full border-6 shadow-lg shadow-[#ffcd67]"
+                className="object-cover rounded-full border-6 p-6 shadow-inner shadow-[#ffcd67]"
               />
             </div>
             <div className="mt-8 lg:mt-0 lg:ml-8 flex-1">
