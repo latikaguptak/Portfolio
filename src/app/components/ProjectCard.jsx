@@ -27,7 +27,7 @@ const ProjectCard = ({
           backgroundPosition: "center",
         }}
       >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full overflow-hidden h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
+        <div className="overlay items-center justify-center absolute top-0 left-0 w-full overflow-hidden h-full bg-[#181818]/50 bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
           <Link
             href={gitUrl}
             className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
@@ -44,9 +44,9 @@ const ProjectCard = ({
           </Link>
         </div>
       </div>
-      <div className="text-[#ffcd67] rounded-b-xl mt-2 bg-[#181818] icon-box py-6 px-4 transform hover:translate-y-1 hover:shadow-xl transition ease-in-out duration-300">
+      <div className="text-zinc-7 00 rounded-b-xl mt-2 bg-[#e2e8ec] icon-box py-6 px-4 transform hover:translate-y-1 hover:shadow-xl transition ease-in-out duration-300">
         <h5 className="text-md font-semibold mb-2">{title}</h5>
-        <div className={`text-slate-300 ${isExpanded ? "line-clamp-none" : "line-clamp-2"} overflow-hidden transition-max-height duration-500 ease-in-out`}>
+        <div className={`text-slate-900 ${isExpanded ? "line-clamp-none" : "line-clamp-2"} overflow-hidden transition-max-height duration-500 ease-in-out`}>
           {description}
         </div>
         {pathName !== "/" && (

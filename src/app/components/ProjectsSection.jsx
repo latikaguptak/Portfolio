@@ -25,15 +25,15 @@ const projectsData = [
     previewUrl: "https://shopping-cart-tau-six-38.vercel.app/",
   },
  
-  {
-    id: 3,
-    title: "Weather App React  PWA",
-    description: "Used axios , React and used PWA features of React ",
-    image: "/images/projects/weather.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "https://weatherappbyaman.web.app/",
-  },
+  // {
+  //   id: 3,
+  //   title: "Weather App React  PWA",
+  //   description: "Used axios , React and used PWA features of React ",
+  //   image: "/images/projects/weather.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "https://weatherappbyaman.web.app/",
+  // },
   // {
   //   id: 4,
   //   title: "Motion an Ai powered note talking app",
@@ -86,14 +86,16 @@ const handleProjects = ()=>{
   return (
     <>
    
-    <section id="projects" className="flex justify-center items-center mt-32 bg-zinc-950">
-      <div className="flex justify-center items-center m-10 p-10 bg-blue-900 rounded-3xl shadow-inner hover:bg-blue-950 shadow-[#ffcd67]" > 
+    <section id="projects" className="flex justify-center items-center mt-20 bg-zinc-950">
+      <div className="grid justify-center items-center m-10 p-10 bg-blue-900 rounded-3xl shadow-inner hover:bg-blue-950 shadow-[#ffcd67]" > 
 
-      <h2 className="text-center text-4xl font-bold h-30 w-1/4 text-[#ffcd67] flex items-center justify-center rounded-3xl mt-10 pr-6 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold  text-[#ffcd67] flex items-center justify-center rounded-3xl mt-5 md:mb-12">
+       <span className="hover:-translate-y-1 ">
         Projects
+        </span> 
       </h2>
     
-      <ul ref={ref} className="grid md:grid-cols-3  md:gap-4 ">
+      <ul ref={ref} className="justify-between grid md:grid-cols-2 items-center gap-4 flex-row ">
         {filteredProjects.map((project, index) => (
           <motion.li
           key={index}
